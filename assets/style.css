@@ -50,8 +50,13 @@ header {
   margin: 0 auto;
 }
 
+.header-logo-img {
+  height: 60px;
+  width: auto;
+}
+
 .logo-img {
-  height: 40px;
+  height: 200px;
   width: auto;
 }
 
@@ -232,6 +237,7 @@ header {
 .contact-container {
   max-width: 1400px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .services h2,
@@ -436,4 +442,144 @@ footer p {
 }
 .skip-link:focus {
   top: 6px;
+}
+
+/* Strengths & Technologies Section */
+.strengths {
+  padding: 6rem 2rem;
+  background: #fff;
+}
+.strengths-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.strengths h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--color-text);
+}
+.strengths-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .strengths-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.tech-stack h3,
+.core-strengths h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-dark);
+}
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.tech-logo {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  background: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.tech-logo img,
+.tech-logo svg {
+  width: 100%;
+  height: auto;
+  max-height: 64px; /* prevents oversizing */
+  display: block;
+  fill: var(--color-primary);
+}
+.tech-logo:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 25px var(--color-shadow-hover);
+}
+.tech-logo .tooltip {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.tech-logo:hover .tooltip {
+  opacity: 1;
+}
+/* Optional: add a small arrow below the tooltip */
+.tech-logo .tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.core-strengths ul {
+  list-style: none;
+}
+.core-strengths li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+.core-strengths li::before {
+  content: "Right Arrow";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.tech-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: var(--color-background);
+}
+@media (max-width: 600px) {
+  .tech-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-logos {
+    flex-direction: column;
+    align-items: center;
+  }
 }
