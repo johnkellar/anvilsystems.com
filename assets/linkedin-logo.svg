@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#080808"/>
+
+  <!-- ANVIL -->
+  <text x="200" y="175" font-family="'Bebas Neue', sans-serif" font-size="56" letter-spacing="0.08em" fill="#edeae4" text-anchor="middle">ANVIL</text>
+
+  <!-- Amber bar -->
+  <rect x="128" y="188" width="144" height="3" fill="#c8922a"/>
+
+  <!-- SYSTEMS -->
+  <text x="200" y="220" font-family="'DM Mono', monospace" font-size="18" letter-spacing="0.55em" fill="#c8922a" text-anchor="middle">SYSTEMS</text>
+</svg>

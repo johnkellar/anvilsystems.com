@@ -1,0 +1,40 @@
+# Anvil Systems
+
+> Fractional CTO and technology leadership for startups and scale-ups. Led by John Kellar, Anvil Systems delivers clarity across people, process, and product to tame complexity. Based in Tennessee, serving clients across North America.
+
+Anvil Systems is not a consulting firm that only delivers slide decks. It is an operator-led fractional CTO practice. John Kellar embeds inside your team, works on the problems that matter, and is accountable for outcomes, not just advice.
+
+Technology does not fail in isolation. Anvil Systems aligns people, process, and product to make technology predictable, reliable, and ready for what's next. The three systems: People (team structure, culture, hiring, org design, leadership development), Process (delivery cadence, quality systems, information flow, ops workflows, CI/CD), and Product (architecture, infrastructure, compliance, platform strategy, cost optimization). AI is leveraged across all three as an accelerant.
+
+## Founder
+
+John Kellar is a technology and business operations executive with 25+ years of experience and 10+ years in C-Suite roles across 6+ industries including healthcare, finance, travel, and real estate. He has built HIPAA-compliant platforms, navigated PCI compliance, and is a TechStars alum (Cedars-Sinai). He served in the US Navy as a Cryptologic Technician. His experience spans B2B, B2C, and B2B2C business models.
+
+## Engagement Models
+
+Leadership engagements (ongoing, monthly retainer):
+
+- Fractional CTO: Ongoing technology leadership on a part-time basis, embedded inside your team. 5, 10, or 20 hours per week. 3 month minimum.
+- Interim CTO: Full-time technology leadership during a CTO transition. Stabilize, hire, hand off. 6 month minimum.
+- Strategic Advisor: A trusted technical voice for boards, leadership teams, and founders. 5 hours per week. 3 month minimum.
+
+Project engagements (scoped, upfront pricing):
+
+- Technical Due Diligence: Independent technical assessment for investors evaluating an acquisition, or startups preparing for investor scrutiny. Fixed fee, starting at $10k.
+- Platform Build: Greenfield builds, major platform rebuilds, and legacy modernization. Designed for scale, long-term maintainability, and clean handoff. 3 month minimum, starting at $15k/mo.
+- Architecture Design Session: Structured multi-day working session ending with documented decisions your engineering team can execute. Fixed fee, $10k-$15k.
+
+Every engagement starts with a minimum commitment. Month-to-month is available after the initial term. Every engagement ends with a clean handoff: documentation, context, and a plan for what happens next.
+
+## FAQ
+
+- A fractional CTO operates inside your team and owns outcomes. A consultant delivers a recommendation and leaves.
+- Leadership engagements start with a 3 or 6 month minimum. Most clients continue beyond the initial term.
+- Anvil Systems works with pre-revenue startups when there is a real technical challenge (architecture, compliance, fundraising prep), not when what's needed is a developer. We can help you find and hire the right engineer.
+- Not sure which engagement model is right? That's what the discovery call is for.
+
+## Contact
+
+- [Book a Discovery Call](https://calendly.com/johnkellar/discovery-call): No pitch deck. No sales pressure. Just an honest conversation about what you need.
+- [LinkedIn](https://www.linkedin.com/in/johnkellar)
+- [Website](https://anvilsystems.com)

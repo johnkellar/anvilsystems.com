@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#080808"/>
+
+  <!-- A -->
+  <text x="256" y="340" font-family="'Bebas Neue', sans-serif" font-size="320" letter-spacing="0.02em" fill="#edeae4" text-anchor="middle">A</text>
+
+  <!-- Amber bar -->
+  <rect x="128" y="380" width="256" height="16" fill="#c8922a"/>
+</svg>

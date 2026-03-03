@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Auto-update copyright year
-    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 
-    // Mobile menu toggle
+    // Mobile hamburger menu toggle
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.getElementById('nav-links');
 
@@ -13,23 +16,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Active nav link highlighting
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
+    // Close menu on nav link click (mobile)
+    if (nav) {
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                if (toggle) {
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
         });
-    });
+    }
 
-    // Optional: Highlight current section on scroll (smooth bonus)
+    // Active nav link highlighting on scroll
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
     window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            if (scrollY >= sectionTop) {
+            const sectionTop = section.offsetTop - 120;
+            if (window.scrollY >= sectionTop) {
                 current = section.getAttribute('id');
             }
         });
@@ -41,4 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // IntersectionObserver scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
