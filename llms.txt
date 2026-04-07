@@ -1,8 +1,8 @@
-# Anvil Systems
+# Anvil Systems, LLC
 
-> Fractional CTO and technology leadership for startups and scale-ups. Led by John Kellar, Anvil Systems delivers clarity across people, process, and product to tame complexity. Based in Tennessee, serving clients across North America.
+> Fractional CTO and technology leadership for startups and scale-ups. Led by John Kellar, Anvil Systems, LLC delivers clarity across people, process, and product to tame complexity. Based in Tennessee, serving clients across North America.
 
-Anvil Systems is not a consulting firm that only delivers slide decks. It is an operator-led fractional CTO practice. John Kellar embeds inside your team, works on the problems that matter, and is accountable for outcomes, not just advice.
+Anvil Systems, LLC is not a consulting firm that only delivers slide decks. It is an operator-led fractional CTO practice. John Kellar embeds inside your team, works on the problems that matter, and is accountable for outcomes, not just advice.
 
 Technology does not fail in isolation. Anvil Systems aligns people, process, and product to make technology predictable, reliable, and ready for what's next. The three systems: People (team structure, culture, hiring, org design, leadership development), Process (delivery cadence, quality systems, information flow, ops workflows, CI/CD), and Product (architecture, infrastructure, compliance, platform strategy, cost optimization). AI is leveraged across all three as an accelerant.
 
