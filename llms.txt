@@ -33,6 +33,10 @@ Every engagement starts with a minimum commitment. Month-to-month is available a
 - Anvil Systems works with pre-revenue startups when there is a real technical challenge (architecture, compliance, fundraising prep), not when what's needed is a developer. We can help you find and hire the right engineer.
 - Not sure which engagement model is right? That's what the discovery call is for.
 
+## Products
+
+- [LeanTo](https://leanto.dev): A Kanban board for engineering teams that enforces WIP limits, integrates with Git, and automates workflow without ceremony. Built by Anvil Systems.
+
 ## Contact
 
 - [Book a Discovery Call](https://calendly.com/johnkellar/discovery-call): No pitch deck. No sales pressure. Just an honest conversation about what you need.
