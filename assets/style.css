@@ -73,6 +73,18 @@ a {
   text-decoration: none;
 }
 
+.inline-link {
+  color: var(--amber);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+  color: var(--amber-light);
+}
+
 /* ═══════════════════════════════════════
    SKIP LINK (Accessibility)
 ═══════════════════════════════════════ */
@@ -1162,6 +1174,22 @@ a {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--dim);
+}
+
+.footer-link {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--amber);
 }
 
 /* ═══════════════════════════════════════
