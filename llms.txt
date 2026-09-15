@@ -4,7 +4,7 @@
 
 Anvil Systems, LLC is not a consulting firm that only delivers slide decks. It is an operator-led fractional CTO practice. John Kellar embeds inside your team, works on the problems that matter, and is accountable for outcomes, not just advice.
 
-Technology does not fail in isolation. Anvil Systems aligns people, process, and product to make technology predictable, reliable, and ready for what's next. The three systems: People (team structure, culture, hiring, org design, leadership development), Process (delivery cadence, quality systems, information flow, ops workflows, CI/CD), and Product (architecture, infrastructure, compliance, platform strategy, cost optimization). AI is leveraged across all three as an accelerant.
+Technology does not fail in isolation. Anvil Systems aligns people, process, and product to make technology predictable, reliable, and ready for what's next. The three systems: People (team structure, culture, hiring, org design, leadership development, AI fluency), Process (delivery cadence, quality systems, information flow, ops workflows, CI/CD, AI acceleration), and Product (architecture, infrastructure, compliance, cost optimization, AI enablement).
 
 ## Founder
 
@@ -12,26 +12,34 @@ John Kellar is a technology and business operations executive with 25+ years of 
 
 ## Engagement Models
 
-Leadership engagements (ongoing, monthly retainer):
+Engagements fall into three categories. Leadership engagements are ongoing relationships, providing presence, judgment, and accountability. Delivery engagements are hands-on, building and maintaining your platform. Assessment engagements are scoped, with a defined deliverable and a clear endpoint.
 
-- Fractional CTO: Ongoing technology leadership on a part-time basis, embedded inside your team. 5, 10, or 20 hours per week. 3 month minimum.
-- Interim CTO: Full-time technology leadership during a CTO transition. Stabilize, hire, hand off. 6 month minimum.
-- Strategic Advisor: A trusted technical voice for boards, leadership teams, and founders. 5 hours per week. 3 month minimum.
+Leadership (ongoing, strategic):
 
-Project engagements (scoped, upfront pricing):
+- Fractional CTO: Ongoing technology leadership on a part-time basis, embedded inside your team. 20, 40, or 80 hours per month. 3 month minimum.
+- Interim CTO: Full-time technology leadership during a CTO transition. Stabilize, hire, hand off. Optional transition to Strategic Advisor after handoff. 6 month minimum.
+- Strategic Advisor: A trusted technical voice for boards, leadership teams, and founders. 5, 10, or 20 hours per month. 3 month minimum.
 
-- Technical Due Diligence: Independent technical assessment for investors evaluating an acquisition, or startups preparing for investor scrutiny. Fixed fee, starting at $10k.
-- Platform Build: Greenfield builds, major platform rebuilds, and legacy modernization. Designed for scale, long-term maintainability, and clean handoff. 3 month minimum, starting at $15k/mo.
-- Architecture Design Session: Structured multi-day working session ending with documented decisions your engineering team can execute. Fixed fee, $10k-$15k.
+Delivery (hands-on, build and maintain):
+
+- Platform Build: Greenfield builds, platform refactors, and legacy modernization. Architecture is part of the engagement because the right platform starts with the right foundation. Every build is designed for scale, long-term maintainability, and a clean handoff to your team. 3 month minimum, starting at $15k/mo.
+- Platform Maintenance: Dedicated engineering hours to keep an existing platform running, current, and improving, whether Anvil built it or your team did. Anvil handles bug fixes, small enhancements, dependency and security updates, and urgent issues when things break, without the cost of a full-time team. Reserved hours per month. 3 month minimum.
+
+Assessment (scoped, fixed fee):
+
+- Technical Review: An independent technical assessment for investors evaluating an acquisition, or startups preparing for investor scrutiny. Scoped and agreed upfront, then delivered as a written report covering architecture, team, risk, and technical debt. Fixed fee, starting at $10k.
+- Architecture Design Session: Structured multi-day working session ending with documented recommendations your engineering team can execute. Fixed fee, $10k-$15k.
 
 Every engagement starts with a minimum commitment. Month-to-month is available after the initial term. Every engagement ends with a clean handoff: documentation, context, and a plan for what happens next.
 
 ## FAQ
 
 - A fractional CTO operates inside your team and owns outcomes. A consultant delivers a recommendation and leaves.
-- Leadership engagements start with a 3 or 6 month minimum. Most clients continue beyond the initial term.
+- Which engagement is right? Fractional CTO if you need ongoing technology leadership. Interim CTO if your CTO just left and you need coverage now. Strategic Advisor if you have a technical team but need outside perspective on key decisions. Delivery if you need something built or kept running. Assessment if you need an independent read on where things stand.
+- Leadership and Delivery engagements start with a 3 or 6 month minimum, depending on the offering. Most clients continue beyond the initial term. Assessment engagements have defined timelines agreed upfront.
+- A retainer is preferred over time and materials for predictability. It reserves hours, so the budget is agreed upfront with no surprise invoices. It reserves priority, so the work is scheduled rather than queued. It reserves capacity, so when nothing is urgent that time goes to building context on your systems, constraints, and risks. If you only need a few hours of help once, we will say so on the discovery call.
 - Anvil Systems works with pre-revenue startups when there is a real technical challenge (architecture, compliance, fundraising prep), not when what's needed is a developer. We can help you find and hire the right engineer.
-- Not sure which engagement model is right? That's what the discovery call is for.
+- Still not sure which engagement model is right? That's what the discovery call is for.
 
 ## Products
 

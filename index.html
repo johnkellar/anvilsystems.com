@@ -25,12 +25,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Mono:wght@400;500&amp;family=DM+Serif+Display:ital@0;1&amp;family=Lato:ital,wght@0,300;0,400;0,700;1,300&amp;display=swap"
         rel="stylesheet">
 
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="assets/style.css" as="style">
-    <link rel="stylesheet" href="assets/style.css">
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="stylesheet" href="assets/style.css?v=49f334a8">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -191,24 +193,20 @@
                         <div class="systems-grid" role="list">
                             <div class="system-item" data-s="people" role="listitem">
                                 <span class="system-name">People</span>
-                                <span class="system-desc">Team structure · Culture · Hiring · Org design · Leadership
-                                    development</span>
+                                <span class="system-desc">Team&nbsp;structure · Culture · Hiring · Org&nbsp;design
+                                    · Leadership&nbsp;development · AI&nbsp;fluency</span>
                             </div>
                             <div class="system-item" data-s="process" role="listitem">
                                 <span class="system-name">Process</span>
-                                <span class="system-desc">Delivery cadence · Quality systems · CI/CD · Information flow
-                                    · Ops
-                                    workflows</span>
+                                <span class="system-desc">Delivery&nbsp;cadence · Quality&nbsp;systems · CI/CD
+                                    · Information&nbsp;flow · Ops&nbsp;workflows · AI&nbsp;acceleration</span>
                             </div>
                             <div class="system-item" data-s="product" role="listitem">
                                 <span class="system-name">Product</span>
-                                <span class="system-desc">Architecture · Infrastructure · Compliance · Platform strategy
-                                    · Cost optimization</span>
+                                <span class="system-desc">Architecture · Infrastructure · Compliance
+                                    · Cost&nbsp;optimization · AI&nbsp;enablement</span>
                             </div>
                         </div>
-                        <p class="systems-note">
-                            Leverage AI across all three as an accelerant.
-                        </p>
                     </div>
 
                 </div>
@@ -222,12 +220,16 @@
                 <div class="reveal">
                     <div class="t-label">Engagement Models</div>
                     <h2 id="services-heading" class="t-display services-heading">
-                        Six ways to<br>work together
+                        Three ways to<br>work together
                     </h2>
                     <p class="services-intro">
-                        Engagements fall into two categories. Leadership engagements are ongoing relationships,
-                        providing presence, judgment, and accountability. Project engagements have a defined scope, a
-                        defined deliverable, and a clear endpoint.
+                        Engagements fall into three categories.
+                        <span class="services-intro-term">Leadership</span> engagements are ongoing
+                        relationships, providing presence, judgment, and accountability.
+                        <span class="services-intro-term">Delivery</span> engagements are hands-on, building
+                        and maintaining your platform.
+                        <span class="services-intro-term">Assessment</span> engagements are scoped, with a
+                        defined deliverable and a clear endpoint.
                     </p>
                 </div>
 
@@ -235,7 +237,7 @@
                 <div class="reveal services-tier-wrap">
                     <div class="services-tier-header">
                         <span class="services-tier-label">Leadership</span>
-                        <span class="services-tier-meta">Ongoing · Monthly retainer</span>
+                        <span class="services-tier-meta">Ongoing · Monthly Retainer</span>
                     </div>
                 </div>
 
@@ -248,7 +250,7 @@
                             team working on the problems that matter to your business. Best for companies that need
                             ongoing technology leadership without a full-time CTO.</p>
                         <div class="service-details">
-                            <span class="service-detail">5, 10, or 20 hours per week</span>
+                            <span class="service-detail">20, 40, or 80 hours per month</span>
                         </div>
                         <div class="service-systems">
                             <span class="pattern-tag" data-t="primary">3 Month Minimum</span>
@@ -278,6 +280,42 @@
                         <div class="service-details">
                             <span class="service-detail">5, 10, or 20 hours per month</span>
                         </div>
+                        <div class="service-systems">
+                            <span class="pattern-tag" data-t="primary">3 Month Minimum</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- TIER 2: DELIVERY -->
+                <div class="reveal services-tier-wrap">
+                    <div class="services-tier-header">
+                        <span class="services-tier-label">Delivery</span>
+                        <span class="services-tier-meta">Hands-on · Monthly Retainer</span>
+                    </div>
+                </div>
+
+                <div class="services-grid services-grid-2 services-grid-gap reveal" role="list">
+
+                    <article class="service-card" role="listitem">
+                        <div class="service-number">04</div>
+                        <h3 class="service-name">Platform Build</h3>
+                        <p class="service-desc">Greenfield builds, platform refactors, and legacy modernization.
+                            Architecture is part of the engagement because the right platform starts with
+                            the right foundation. Every build is designed for scale, long-term maintainability, and
+                            a clean handoff to your team.</p>
+                        <div class="service-systems service-systems-mt">
+                            <span class="pattern-tag" data-t="primary">3 Month Minimum</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card" role="listitem">
+                        <div class="service-number">05</div>
+                        <h3 class="service-name">Platform Maintenance</h3>
+                        <p class="service-desc">Dedicated engineering hours to keep an existing platform running,
+                            current, and improving, whether we built it or your team did. We handle bug fixes, small
+                            enhancements, dependency and security updates, and urgent issues when things break, without
+                            the cost of a full-time team.</p>
                         <div class="service-systems service-systems-mt">
                             <span class="pattern-tag" data-t="primary">3 Month Minimum</span>
                         </div>
@@ -285,21 +323,21 @@
 
                 </div>
 
-                <!-- TIER 2: PROJECT -->
+                <!-- TIER 3: ASSESSMENT -->
                 <div class="reveal services-tier-wrap">
                     <div class="services-tier-header">
-                        <span class="services-tier-label">Project</span>
-                        <span class="services-tier-meta">Scoped · Upfront pricing</span>
+                        <span class="services-tier-label">Assessment</span>
+                        <span class="services-tier-meta">Scoped · Fixed Fee</span>
                     </div>
                 </div>
 
-                <div class="services-grid reveal" role="list">
+                <div class="services-grid services-grid-2 reveal" role="list">
 
                     <article class="service-card" role="listitem">
-                        <div class="service-number">04</div>
-                        <h3 class="service-name">Technical Due Diligence</h3>
+                        <div class="service-number">06</div>
+                        <h3 class="service-name">Technical Review</h3>
                         <p class="service-desc">An independent technical assessment for investors evaluating an
-                            acquisition, or startups preparing for investor scrutiny. Scoped and agreed upfront,
+                            acquisition, or startups preparing for investor scrutiny. Scoped and agreed upfront, then
                             delivered as a written report covering architecture, team, risk, and technical debt.</p>
                         <div class="service-systems service-systems-mt">
                             <span class="pattern-tag" data-t="primary">Fixed Fee</span>
@@ -307,25 +345,12 @@
                     </article>
 
                     <article class="service-card" role="listitem">
-                        <div class="service-number">05</div>
-                        <h3 class="service-name">Platform Build</h3>
-                        <p class="service-desc">Greenfield builds, major platform rebuilds, and legacy modernization.
-                            Architecture is part of the engagement because you don’t build the right platform without
-                            designing it first. Every build is designed for scale, long-term maintainability, and clean
-                            handoff to your team.</p>
-                        <div class="service-systems service-systems-mt">
-                            <span class="pattern-tag" data-t="primary">3 Month Minimum</span>
-                        </div>
-                    </article>
-
-                    <article class="service-card" role="listitem">
-                        <div class="service-number">06</div>
+                        <div class="service-number">07</div>
                         <h3 class="service-name">Architecture Design Session</h3>
-                        <p class="service-desc"> A structured multi-day working session for teams facing major
+                        <p class="service-desc">A structured multi-day working session for teams facing major
                             technical obstacles or needing architectural guidance on compliance, complexity, or other
                             critical decisions. The engagement ends with documented recommendations your engineering
-                            team can execute.
-                        </p>
+                            team can execute.</p>
                         <div class="service-systems service-systems-mt">
                             <span class="pattern-tag" data-t="primary">Fixed Fee</span>
                         </div>
@@ -426,10 +451,26 @@
                             <span class="faq-icon" aria-hidden="true">+</span>
                         </summary>
                         <div class="faq-answer">
-                            A consultant delivers a recommendation and leaves. A fractional CTO <strong>operates inside
-                                your team</strong>, attending standups, making architecture calls, mentoring your
+                            A consultant delivers a recommendation and leaves. <strong>A fractional CTO operates
+                                inside your team</strong>, attending standups, making architecture calls, mentoring your
                             engineers, and being accountable for outcomes over time. The relationship is ongoing, not
                             transactional.
+                        </div>
+                    </details>
+
+                    <details class="faq-item" role="listitem">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">How do I know which engagement is right for me?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            If you need ongoing technology leadership, start with <strong>Fractional CTO</strong>. If
+                            your CTO just left and you need coverage now, that's <strong>Interim CTO</strong>. If you
+                            have a technical team but need outside perspective on key decisions, <strong>Strategic
+                                Advisor</strong>. If you need something built or kept running, look at
+                            <strong>Delivery</strong>. If you need an independent read on where things stand, look at
+                            <strong>Assessment</strong>. Not sure? Schedule a discovery call so we can figure it out
+                            together.
                         </div>
                     </details>
 
@@ -439,9 +480,34 @@
                             <span class="faq-icon" aria-hidden="true">+</span>
                         </summary>
                         <div class="faq-answer">
-                            Leadership engagements start with a <strong>3 or 6 month minimum</strong>. Most clients
-                            continue beyond the initial term. Project engagements have defined timelines agreed upfront.
-                            The goal is always to build internal capability, not to create dependency.
+                            Leadership and Delivery engagements start with a <strong>3 or 6 month minimum</strong>,
+                            depending on the offering. Most clients continue beyond the initial term. Assessment
+                            engagements have defined timelines agreed upfront. The goal is always to build internal
+                            capability, not to create dependency.
+                        </div>
+                    </details>
+
+                    <details class="faq-item" role="listitem">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">Why a retainer instead of time and
+                                materials?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>In a word, <strong>predictability</strong>.</p>
+                            <p><strong>A retainer reserves hours.</strong> The number is agreed upfront, <strong>so your
+                                    budget is
+                                    predictable and there are no surprise invoices.</strong></p>
+                            <p><strong>A retainer reserves priority.</strong> Your hours are carved out in advance,
+                                <strong>so the work is
+                                    scheduled rather than queued.</strong>
+                            </p>
+                            <p><strong>A retainer reserves capacity.</strong> When nothing is urgent, <strong>that time
+                                    goes to building
+                                    context on your systems, your constraints, and your risks,</strong> which makes
+                                every
+                                later hour more effective.</p>
+                            <p>If you only need a few hours of help once, we will say so on the discovery call.</p>
                         </div>
                     </details>
 
@@ -456,20 +522,6 @@
                                 compliance groundwork, or fundraising preparation</strong>, a fractional CTO can be the
                             most cost-effective path. If you just need code written, you need an engineer. We can help
                             you find and hire the right one.
-                        </div>
-                    </details>
-
-                    <details class="faq-item" role="listitem">
-                        <summary class="faq-question">
-                            <span class="faq-question-text">How do I know which engagement model is right?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
-                        </summary>
-                        <div class="faq-answer">
-                            If you need ongoing technology leadership, start with <strong>Fractional CTO</strong>. If
-                            your CTO just left and you need coverage now, that's <strong>Interim CTO</strong>. If you
-                            have a technical team but need outside perspective on key decisions, <strong>Strategic
-                                Advisor</strong>. If you have a specific deliverable in mind, look at the project
-                            engagements. Not sure? That's what the discovery call is for.
                         </div>
                     </details>
 
@@ -515,7 +567,7 @@
         </div>
     </footer>
 
-    <script src="assets/main.js" defer></script>
+    <script src="assets/main.js?v=773442e8" defer></script>
 </body>
 
 </html>
