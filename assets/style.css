@@ -248,8 +248,13 @@ a {
   color: var(--muted);
   transition: color 0.2s;
 }
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus-visible {
   color: var(--off-white);
+}
+
+.nav-links a.active {
+  color: var(--amber);
 }
 
 .nav-cta {
@@ -282,6 +287,11 @@ a {
   width: 44px;
   height: 44px;
   z-index: 101;
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
 }
 
 .nav-toggle .hamburger,
@@ -673,16 +683,6 @@ a {
   line-height: 1.7;
 }
 
-.systems-note {
-  margin-top: 1.5rem;
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--dim);
-  line-height: 1.8;
-}
-
 .pattern-tag {
   font-family: var(--mono);
   font-size: 0.75rem;
@@ -732,6 +732,14 @@ a {
   margin-bottom: 3.5rem;
 }
 
+.services-intro-term {
+  font-family: var(--display);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--amber);
+  display: inline;
+}
+
 .services-tier-wrap {
   margin-bottom: 1px;
 }
@@ -771,6 +779,10 @@ a {
 
 .services-grid-gap {
   margin-bottom: 4rem;
+}
+
+.services-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .service-card {
@@ -841,7 +853,7 @@ a {
   text-transform: uppercase;
   color: var(--dim);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.6rem;
 }
 .service-detail::before {
@@ -1084,6 +1096,14 @@ a {
   font-weight: 400;
 }
 
+.faq-answer p {
+  margin-bottom: 1rem;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
 /* ═══════════════════════════════════════
    CTA
 ═══════════════════════════════════════ */
@@ -1228,14 +1248,16 @@ a {
 }
 
 /* Scroll reveal */
-.reveal {
+/* Scroll reveal is opt-in: the .js class is set by an inline script in the
+   head, so with JavaScript unavailable the content is simply visible. */
+.js .reveal {
   opacity: 0;
   transform: translateY(20px);
   transition:
     opacity 0.6s ease,
     transform 0.6s ease;
 }
-.reveal.visible {
+.js .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1252,8 +1274,8 @@ a {
     padding: 4rem 0;
   }
 
-  /* Nav: show hamburger, hide desktop links */
-  .nav-toggle {
+  /* Nav: hamburger only once JS can drive it, desktop links hidden */
+  .js .nav-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1263,24 +1285,61 @@ a {
     display: none;
   }
 
+  /* Without JS the toggle cannot open anything, so the links stay in flow.
+     The bar also stops being fixed, since a tall header pinned to the top
+     would cover a third of a phone screen. Only collapse back to the
+     hamburger once .js confirms the toggle works. */
+  .nav {
+    position: static;
+  }
+
+  .nav-inner {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
   .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    background: none;
+    border-bottom: none;
+    padding: 0;
+    gap: 1.25rem;
+    width: 100%;
+    order: 3;
+  }
+
+  .js .nav {
+    position: fixed;
+  }
+
+  .js .nav-inner {
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
+
+  .js .nav-links {
     display: none;
-    flex-direction: column;
+    order: 0;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
+    width: auto;
+    padding: 1rem 0;
     background: rgba(8, 8, 8, 0.98);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
-    padding: 1rem 0;
     z-index: 99;
   }
 
-  .nav-links.active {
+  .js .nav-links.active {
     display: flex;
   }
+
 
   .nav-links li {
     padding: 0;
@@ -1342,7 +1401,8 @@ a {
   }
 
   /* Services */
-  .services-grid {
+  .services-grid,
+  .services-grid-2 {
     grid-template-columns: 1fr;
   }
 
@@ -1423,7 +1483,7 @@ a {
     --muted: #5c5650;
     --dim: #6b655e;
     --amber: #896218;
-    --amber-light: #946a18;
+    --amber-light: #7a5511;
     --amber-dim: #f0e6d0;
   }
 
@@ -1517,5 +1577,27 @@ a {
   .faq-list,
   .services-grid {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* ═══════════════════════════════════════
+   REDUCED MOTION
+═══════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
   }
 }

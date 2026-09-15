@@ -28,36 +28,64 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Active nav link highlighting on scroll
+    // Active nav link highlighting. Uses an observer rather than a scroll
+    // handler so it costs no forced layout while scrolling.
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
-            if (window.scrollY >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-
+    const setActive = (id) => {
         navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
+            const match = link.getAttribute('href') === `#${id}`;
+            link.classList.toggle('active', match);
+            if (match) {
+                link.setAttribute('aria-current', 'true');
+            } else {
+                link.removeAttribute('aria-current');
             }
         });
-    });
+    };
 
-    // IntersectionObserver scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    if ('IntersectionObserver' in window && sections.length) {
+        const visible = new Set();
+        const order = [...sections].map(s => s.id);
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    visible.add(entry.target.id);
+                } else {
+                    visible.delete(entry.target.id);
+                }
+            });
+            const current = order.filter(id => visible.has(id))[0];
+            setActive(current);
+        }, { rootMargin: '-120px 0px -60% 0px' });
+
+        sections.forEach(section => navObserver.observe(section));
+    }
+
+    // IntersectionObserver scroll reveal. If the observer is unavailable or
+    // throws, reveal everything rather than leaving the page blank.
+    const revealAll = () => {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    };
+
+    if (!('IntersectionObserver' in window)) {
+        revealAll();
+    } else {
+        try {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        } catch (err) {
+            revealAll();
+        }
+    }
 });

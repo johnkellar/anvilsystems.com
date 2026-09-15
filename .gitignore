@@ -1,2 +1,4 @@
 .DS_Store
 client-materials/
+# scratch render files
+_*.html
